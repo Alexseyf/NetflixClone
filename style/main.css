@@ -1,0 +1,106 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Bebas neue', Times;
+    /*font-size: 50px;*/
+    margin-left: 10px;
+}
+
+
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("../img/TheSimpsons.jpg") ;
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .description{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.filme-principal .titulo{
+    margin-top: 5%;
+    font-size: 50px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 50%);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: .6s ease all;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #141414;
+}
+
+.botao i{
+    margin-right: 6px;
+}
+
+.filme-principal .container{
+    width: 50%;
+    margin-left: 15px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
